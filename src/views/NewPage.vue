@@ -1,4 +1,4 @@
-<template>
+<template> 
     <div class="new_page">
         <el-select v-model="select" placeholder="請選擇">
             <el-option 

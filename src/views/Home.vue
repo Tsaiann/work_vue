@@ -36,6 +36,6 @@ export default {
           label: '糖果'
         }],
       }
-    }
+  }
 }
 </script>
