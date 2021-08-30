@@ -1,0 +1,4 @@
+.footer{
+    @include flexBox(column, flex-start, flex-start);
+    box-sizing: border-box;
+}

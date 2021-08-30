@@ -1,0 +1,17 @@
+.navigator{
+    @include flexBox(row,center, flex-start);
+    width: 100%;
+    height: 80px;
+    background: #efefef;
+    ul{
+        @include flexBox(row, center, space-between);
+        li{
+            padding: 0.5rem;
+            cursor: crosshair;
+            &:hover{
+                color: pink;
+                background: lighten(#efefef, 5);
+            }
+        }
+    }
+}

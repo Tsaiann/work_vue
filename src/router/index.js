@@ -7,12 +7,30 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
-  },
-  {
-    path: '/new_page',
-    name: 'NewPage',
-    component: () => import(/* webpackChunkName: "newPage" */ '../views/NewPage.vue')
+    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
+    redirect:'top',  //預設的基本頁面
+    children:[
+      {
+        path: 'top',
+        name: 'top',
+        component: () => import(/* webpackChunkName: "top" */ '../components/top.vue'),
+      },
+      {
+        path: 'products',
+        name: 'products',
+        component: () => import(/* webpackChunkName: "products" */ '../components/products.vue'),
+      },
+      {
+        path: 'about',
+        name: 'about',
+        component: () => import(/* webpackChunkName: "about" */ '../components/about.vue'),
+      },
+      {
+        path: 'contact',
+        name: 'contact',
+        component: () => import(/* webpackChunkName: "contact" */ '../components/contact.vue'),
+      },
+    ]
   }
 ]
 
