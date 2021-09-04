@@ -1,15 +1,14 @@
 <template>
-    <div class="top">
-        <p>top page</p>
-    </div>
+  <div class="top">
+  </div>
 </template>
+
 <script>
 export default {
-    name:'top',
-    data(){
-        return{
-
-        }
-    }
+  name:'top',
+  data(){
+    return{
+		}
+  }
 }
 </script>
